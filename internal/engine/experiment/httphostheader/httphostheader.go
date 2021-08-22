@@ -75,6 +75,10 @@ func (m *Measurer) Run(
 	return nil
 }
 
+func Measure(ctx context.Context, config Config) (*TestKeys, error) {
+	
+}
+
 // NewExperimentMeasurer creates a new ExperimentMeasurer.
 func NewExperimentMeasurer(config Config) model.ExperimentMeasurer {
 	return &Measurer{config: config}
